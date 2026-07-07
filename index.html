@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Diego</title>
+<style>
+  :root {
+    --navy: #1b2a41;
+    --gold: #d4a24c;
+    --cream: #faf6f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', 'Segoe UI', sans-serif;
+    background: var(--cream);
+    color: var(--navy);
+  }
+  header {
+    background: var(--navy);
+    color: white;
+    padding: 5rem 1.5rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    letter-spacing: 1px;
+  }
+  header p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--gold);
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .intro p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  .card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--navy);
+  }
+  .card .tag {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin-bottom: 0.6rem;
+  }
+  .card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #888;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>San Diego</h1>
+    <p>UCSD 근처 BEST 맛집 모음</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>UC San Diego 캠퍼스에서 도보 또는 짧은 드라이브로 갈 수 있는<br>
+      학생들이 사랑하는 맛집들을 소개합니다.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <span class="tag">멕시칸</span>
+        <h2>Roberto's Taco Shop</h2>
+        <p>UCSD 학생들의 국룰 타코 가게. 가성비 좋은 카르네 아사다 부리또가 인기입니다.</p>
+      </div>
+      <div class="card">
+        <span class="tag">포케</span>
+        <h2>Poke Bar</h2>
+        <p>La Jolla Village Dr 근처, 신선한 재료로 커스텀 포케볼을 만들어주는 곳.</p>
+      </div>
+      <div class="card">
+        <span class="tag">카페 & 브런치</span>
+        <h2>Cafe 1134</h2>
+        <p>Ocean Beach 근방의 아늑한 브런치 카페. 주말 스터디하기도 좋아요.</p>
+      </div>
+      <div class="card">
+        <span class="tag">라멘</span>
+        <h2>Menya Ultra</h2>
+        <p>UTC 근처의 진한 돈코츠 라멘 맛집. 학기 중 힐링 음식으로 최고.</p>
+      </div>
+      <div class="card">
+        <span class="tag">피자</span>
+        <h2>Pizzeria Luigi</h2>
+        <p>Pacific Beach 근처, 얇고 바삭한 도우의 정통 이탈리안 피자.</p>
+      </div>
+      <div class="card">
+        <span class="tag">스시</span>
+        <h2>Karina's Sushi</h2>
+        <p>가성비 좋은 롤과 신선한 사시미로 유명한 로컬 스시집.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 San Diego Project — Made for UCSD students
+  </footer>
+</body>
+</html>
